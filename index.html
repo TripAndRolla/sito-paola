@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Paola Sorrento - Interprete LIS professionista nel Salento. Interpretariato Lingua dei Segni Italiana per aziende, associazioni ed enti. Corsi LIS e consulenza accessibilità in Puglia.">
+<meta name="keywords" content="interprete LIS Salento, interprete lingua dei segni Puglia, accessibilità sordi Salento, corsi LIS Salento, interprete LIS bandi regionali, accessibilità aziendale sordi">
+<meta name="author" content="Paola Sorrento">
+<meta property="og:title" content="Paola Sorrento – Interprete LIS | Salento">
+<meta property="og:description" content="Servizi professionali di interpretariato LIS per aziende e associazioni nel Salento e in Puglia.">
+<meta property="og:type" content="website">
+<title>Paola Sorrento – Interprete LIS | Salento, Puglia</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #0d1f3c;
+    --navy-mid: #1a3358;
+    --teal: #2a8c82;
+    --teal-light: #d4f0ec;
+    --teal-dark: #1d6b63;
+    --anthracite: #2c3340;
+    --anthracite-light: #4a5568;
+    --white: #ffffff;
+    --off-white: #f7f9fb;
+    --light-gray: #eef1f5;
+    --text-main: #1a202c;
+    --text-muted: #5a6478;
+    --border: #dde3eb;
+    --accent-gold: #c9a84c;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    background: var(--white);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.25; }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--navy);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+  }
+
+  .nav-logo span {
+    color: var(--teal);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 0.25rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.78);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.45rem 0.85rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .nav-links a:hover {
+    color: var(--white);
+    background: rgba(255,255,255,0.08);
+  }
+
+  .nav-cta {
+    background: var(--teal) !important;
+    color: var(--white) !important;
+    border-radius: 4px;
+  }
+
+  .nav-cta:hover {
+    background: var(--teal-dark) !important;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+  }
+
+  .hamburger span {
+    width: 22px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  /* ─── HERO ─── */
+  #home {
+    min-height: 100vh;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg-shape {
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%;
+    height: 100%;
+    background: var(--navy-mid);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    opacity: 0.5;
+  }
+
+  .hero-accent {
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px solid rgba(42, 140, 130, 0.15);
+  }
+
+  .hero-accent-2 {
+    position: absolute;
+    bottom: -120px;
+    left: -120px;
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    border: 1px solid rgba(42, 140, 130, 0.08);
+  }
+
+  .hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--teal);
+    flex-shrink: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    line-height: 1.15;
+  }
+
+  .hero-title em {
+    color: var(--teal);
+    font-style: normal;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.72);
+    margin-bottom: 2.5rem;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--teal);
+    color: var(--white);
+    padding: 0.85rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: all 0.22s;
+    border: 2px solid var(--teal);
+  }
+
+  .btn-primary:hover {
+    background: var(--teal-dark);
+    border-color: var(--teal-dark);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: var(--white);
+    padding: 0.85rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: all 0.22s;
+    border: 1.5px solid rgba(255,255,255,0.3);
+  }
+
+  .btn-secondary:hover {
+    border-color: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.05);
+  }
+
+  .hero-video-wrapper {
+    position: relative;
+  }
+
+  .video-placeholder {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: var(--navy-mid);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .video-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(42,140,130,0.08) 0%, transparent 60%);
+  }
+
+  .play-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .play-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    margin-left: 3px;
+  }
+
+  .video-label {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .hero-badges {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.02em;
+    background: rgba(255,255,255,0.04);
+  }
+
+  /* ─── SEZIONI ─── */
+  .section {
+    padding: 5rem 2rem;
+  }
+
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .section-tag::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--teal);
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+
+  .section-lead {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    line-height: 1.8;
+  }
+
+  .divider {
+    width: 48px;
+    height: 3px;
+    background: var(--teal);
+    border-radius: 2px;
+    margin: 1.25rem 0 2.5rem;
+  }
+
+  /* ─── VIDEO ─── */
+  #video {
+    background: var(--off-white);
+  }
+
+  .video-full-wrapper {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 820px;
+    aspect-ratio: 16/9;
+    background: var(--anthracite);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    color: rgba(255,255,255,0.5);
+    position: relative;
+  }
+
+  .video-full-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+
+  .video-placeholder-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .play-btn-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .play-btn-large:hover {
+    transform: scale(1.08);
+    background: var(--teal-dark);
+  }
+
+  .play-btn-large svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+    margin-left: 4px;
+  }
+
+  /* ─── SERVIZI ─── */
+  #servizi {
+    background: var(--white);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .service-card {
+    background: var(--off-white);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--teal);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+
+  .service-card:hover {
+    border-color: var(--teal);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(42,140,130,0.1);
+  }
+
+  .service-card:hover::after {
+    transform: scaleX(1);
+  }
+
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: var(--teal-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--teal-dark);
+    fill: none;
+    stroke-width: 1.8;
+  }
+
+  .service-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  /* ─── COME FUNZIONA ─── */
+  #come-funziona {
+    background: var(--navy);
+  }
+
+  #come-funziona .section-title {
+    color: var(--white);
+  }
+
+  #come-funziona .section-lead {
+    color: rgba(255,255,255,0.6);
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    position: relative;
+  }
+
+  .steps-grid::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: calc(16.66% + 1rem);
+    right: calc(16.66% + 1rem);
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    z-index: 0;
+  }
+
+  .step-card {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-number {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+    position: relative;
+  }
+
+  .step-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+  }
+
+  .step-card p {
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.75;
+  }
+
+  /* ─── VALORE ─── */
+  #valore {
+    background: var(--teal-light);
+  }
+
+  .value-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .value-text .section-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .value-text p {
+    font-size: 0.97rem;
+    color: var(--anthracite);
+    line-height: 1.85;
+    margin-bottom: 1.25rem;
+  }
+
+  .value-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .stat-box {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(42,140,130,0.15);
+  }
+
+  .stat-box .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--teal-dark);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .stat-box .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  /* ─── CHI SONO ─── */
+  #chi-sono {
+    background: var(--white);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 2rem;
+  }
+
+  .about-photo {
+    width: 100%;
+    aspect-ratio: 4/5;
+    background: var(--light-gray);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+
+  .photo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 2rem;
+  }
+
+  .photo-placeholder svg {
+    width: 48px;
+    height: 48px;
+    stroke: var(--text-muted);
+    fill: none;
+    stroke-width: 1.2;
+  }
+
+  .about-content h3 {
+    font-size: 1.6rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .about-content .role-tag {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--teal-dark);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .about-content p {
+    font-size: 0.97rem;
+    color: var(--text-muted);
+    line-height: 1.85;
+    margin-bottom: 1rem;
+  }
+
+  .credentials {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .credential-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 0.9rem 1.1rem;
+    background: var(--off-white);
+    border-radius: 8px;
+    border-left: 3px solid var(--teal);
+  }
+
+  .credential-item svg {
+    width: 18px;
+    height: 18px;
+    stroke: var(--teal-dark);
+    fill: none;
+    stroke-width: 2;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .credential-item p {
+    font-size: 0.875rem;
+    color: var(--anthracite);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .credential-item strong {
+    font-weight: 600;
+    color: var(--navy);
+  }
+
+  .cv-btn-wrap {
+    margin-top: 2rem;
+  }
+
+  /* ─── ESPERIENZE ─── */
+  #esperienze {
+    background: var(--off-white);
+  }
+
+  .exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+
+  .exp-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+  }
+
+  .exp-tag {
+    display: inline-flex;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    background: var(--teal-light);
+    color: var(--teal-dark);
+    margin-bottom: 0.85rem;
+  }
+
+  .exp-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .exp-card p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+
+  /* ─── CORSI ─── */
+  #corsi {
+    background: var(--white);
+  }
+
+  .courses-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2.5rem;
+    align-items: start;
+  }
+
+  .course-block {
+    background: var(--off-white);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+  }
+
+  .course-block h3 {
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .course-block .course-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+  }
+
+  .course-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .course-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    color: var(--anthracite);
+    line-height: 1.5;
+  }
+
+  .course-list li::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--teal);
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+
+  /* ─── CONTATTI ─── */
+  #contatti {
+    background: var(--navy);
+  }
+
+  #contatti .section-title {
+    color: var(--white);
+  }
+
+  #contatti .section-lead {
+    color: rgba(255,255,255,0.6);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+    align-items: start;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .form-group label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    transition: border-color 0.2s;
+    outline: none;
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: rgba(255,255,255,0.3);
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: var(--teal);
+  }
+
+  .form-group select option {
+    background: var(--navy);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .form-submit {
+    background: var(--teal);
+    color: var(--white);
+    padding: 0.9rem 2.5rem;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.22s;
+    align-self: flex-start;
+  }
+
+  .form-submit:hover {
+    background: var(--teal-dark);
+    transform: translateY(-1px);
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .contact-info h3 {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-info .contact-tagline {
+    color: rgba(255,255,255,0.55);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+  }
+
+  .contact-item-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(42,140,130,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .contact-item-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: var(--teal);
+    fill: none;
+    stroke-width: 1.8;
+  }
+
+  .contact-item a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .contact-item a:hover {
+    color: var(--teal);
+  }
+
+  .social-links {
+    display: flex;
+    gap: 0.85rem;
+    margin-top: 0.75rem;
+  }
+
+  .social-link {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.22s;
+  }
+
+  .social-link:hover {
+    background: var(--teal);
+    border-color: var(--teal);
+  }
+
+  .social-link svg {
+    width: 18px;
+    height: 18px;
+    fill: rgba(255,255,255,0.7);
+  }
+
+  .social-link:hover svg {
+    fill: white;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--anthracite);
+    padding: 1.5rem 2rem;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.35);
+  }
+
+  footer a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: var(--teal);
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      padding: 4rem 1.5rem;
+    }
+
+    .hero-video-wrapper { order: -1; }
+
+    .value-grid,
+    .about-grid,
+    .courses-layout,
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .steps-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .steps-grid::before { display: none; }
+
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: var(--navy);
+      padding: 1.5rem;
+      gap: 0.25rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .section { padding: 3.5rem 1.25rem; }
+    .value-stats { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a href="#home" class="nav-logo">Paola Sorrento <span>· LIS</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#chi-sono">Chi sono</a></li>
+    <li><a href="#esperienze">Esperienze</a></li>
+    <li><a href="#servizi">Servizi</a></li>
+    <li><a href="#corsi">Corsi</a></li>
+    <li><a href="#contatti" class="nav-cta">Contattami</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Apri menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="home">
+  <div class="hero-bg-shape"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-accent-2"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Interprete LIS · Salento, Puglia</p>
+      <h1 class="hero-title">
+        Rendi i tuoi eventi e servizi <em>accessibili a tutti</em>
+      </h1>
+      <p class="hero-subtitle">
+        Paola Sorrento — interprete professionista di Lingua dei Segni Italiana. Affianco aziende, associazioni ed enti pubblici per abbattere le barriere comunicative e rendere ogni spazio davvero inclusivo.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contatti" class="btn-primary">
+          Richiedi un preventivo
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#servizi" class="btn-secondary">Scopri i servizi</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">Partita IVA</span>
+        <span class="badge">Iscritta ANILIS</span>
+        <span class="badge">Qualifica ENS 2017</span>
+        <span class="badge">Bandi Regionali</span>
+      </div>
+    </div>
+    <div class="hero-video-wrapper">
+      <div class="video-placeholder">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg>
+        </div>
+        <div class="video-label">
+          <p style="font-size:0.85rem;">Video di presentazione</p>
+          <p style="font-size:0.75rem; opacity:0.6; margin-top:0.25rem;">Carica il tuo video per attivarlo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVIZI ══ -->
+<section id="servizi" class="section">
+  <div class="section-inner">
+    <p class="section-tag">Cosa offro</p>
+    <h2 class="section-title">Servizi professionali di interpretariato LIS</h2>
+    <div class="divider"></div>
+    <p class="section-lead">Dalla presenza in sala al contenuto digitale, garantisco che il tuo messaggio raggiunga ogni persona, indipendentemente dalle barriere comunicative.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Eventi e Conferenze</h3>
+        <p>Traduzione in tempo reale per assemblee, webinar, festival e convegni. Presenza fisica o in remoto, con la massima concentrazione e professionalità per ogni tipologia di evento.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Formazione Aziendale</h3>
+        <p>Rendi i corsi di aggiornamento, i webinar interni e i video formativi fruibili anche dai dipendenti sordi. Garantisco l'inclusione del personale in ogni momento della vita aziendale.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        </div>
+        <h3>Contenuti Digitali</h3>
+        <p>Sottotitolazione e adattamento video in LIS per social media e siti web, in linea con le direttive di accessibilità (WCAG). Raggiungi un pubblico più ampio e dimostra il tuo impegno per l'inclusione.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Supporto a Bandi Regionali</h3>
+        <p>Collaboro con associazioni e cooperative che vincono bandi regionali, garantendo la figura professionale dell'interprete LIS richiesta dai progetti finanziati. Esperienza diretta con enti del terzo settore in Puglia.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Consulenza sull'Accessibilità</h3>
+        <p>Affianco le organizzazioni nell'analisi e nel miglioramento dei propri processi comunicativi per renderli accessibili alle persone sorde o ipoudenti, dalla comunicazione interna ai servizi al pubblico.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+        </div>
+        <h3>Colloqui e Incontri Privati</h3>
+        <p>Servizio di interpretariato per colloqui di lavoro, visite mediche, incontri legali e situazioni personali dove la comunicazione precisa e riservata è fondamentale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ COME FUNZIONA ══ -->
+<section id="come-funziona" class="section">
+  <div class="section-inner">
+    <p class="section-tag" style="color:var(--teal);">Processo</p>
+    <h2 class="section-title">Come funziona</h2>
+    <div class="divider"></div>
+    <p class="section-lead">Un percorso semplice e trasparente, dalla prima richiesta alla consegna finale.</p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Contatto e Briefing</h3>
+        <p>Analizziamo insieme il tipo di evento o materiale: contesto, linguaggio tecnico, durata e specifiche esigenze del pubblico sordo.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Pianificazione</h3>
+        <p>Studio il materiale tecnico e specialistico in anticipo, per garantire una resa fedele e fluida in ogni momento dell'evento.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Messa in Onda / Consegna</h3>
+        <p>Presenza all'evento con massima professionalità, oppure consegna dei file video revisionati e pronti alla pubblicazione.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ VALORE ══ -->
+<section id="valore" class="section">
+  <div class="section-inner">
+    <div class="value-grid">
+      <div class="value-text">
+        <p class="section-tag">Perché scegliere l'accessibilità</p>
+        <h2 class="section-title">Il valore dell'inclusione per la tua organizzazione</h2>
+        <div class="divider"></div>
+        <p>Rendere i tuoi servizi accessibili non è solo un obbligo normativo o un gesto etico: è un investimento strategico. Le organizzazioni inclusive ampliano il proprio pubblico potenziale, migliorano la reputazione aziendale (CSR) e si distinguono nel mercato.</p>
+        <p>In Italia, quasi <strong>900.000 persone</strong> sono sorde o ipoudenti. Una comunità con esigenze reali e un enorme potenziale come pubblico, come clienti, come lavoratori.</p>
+        <a href="#contatti" class="btn-primary" style="margin-top:0.5rem;">Parliamone insieme</a>
+      </div>
+      <div class="value-stats">
+        <div class="stat-box">
+          <div class="stat-number">900k</div>
+          <div class="stat-label">Persone sorde o ipoudenti in Italia</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">+21%</div>
+          <div class="stat-label">Aumento di engagement con contenuti accessibili</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">CSR</div>
+          <div class="stat-label">Impatto positivo sulla reputazione aziendale</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">WCAG</div>
+          <div class="stat-label">Conformità alle direttive di accessibilità web</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CHI SONO ══ -->
+<section id="chi-sono" class="section">
+  <div class="section-inner">
+    <p class="section-tag">Chi sono</p>
+    <h2 class="section-title">Formazione e garanzie professionali</h2>
+    <div class="divider"></div>
+
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="foto-paola.jpg" alt="Paola Sorrento, interprete LIS">
+        <div class="photo-placeholder">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <p>Carica qui la tua foto</p>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h3>Paola Sorrento</h3>
+        <span class="role-tag">Interprete LIS · Libera Professionista · Salento</span>
+
+        <p>Opero come libera professionista con regolare Partita IVA, offrendo servizi di interpretariato LIS (Lingua dei Segni Italiana) caratterizzati da massima trasparenza fiscale e piena conformità normativa.</p>
+
+        <p>Ho conseguito la qualifica di Interprete LIS nel 2017 presso l'ENS (Ente Nazionale Sordi) di Roma e sono iscritta all'ANILIS (Associazione Nazionale Interpreti Lingua dei Segni Italiana), l'associazione di categoria riconosciuta a livello nazionale.</p>
+
+        <p>L'adesione all'ANILIS garantisce la mia costante formazione continua e il rigoroso rispetto del Codice Deontologico. Per le organizzazioni che trattano dati sensibili o gestiscono ambienti riservati, questo si traduce nella certezza assoluta di segreto professionale, riservatezza e neutralità in ogni contesto.</p>
+
+        <div class="credentials">
+          <div class="credential-item">
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <p><strong>Qualifica ENS 2017</strong> — Ente Nazionale Sordi di Roma</p>
+          </div>
+          <div class="credential-item">
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <p><strong>Iscritta ANILIS</strong> — Formazione continua e Codice Deontologico</p>
+          </div>
+          <div class="credential-item">
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <p><strong>Libera professionista con P.IVA</strong> — Piena conformità fiscale e normativa</p>
+          </div>
+          <div class="credential-item">
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <p><strong>Segreto professionale</strong> — Riservatezza e neutralità garantite in ogni contesto</p>
+          </div>
+        </div>
+
+        <div class="cv-btn-wrap">
+          <a href="curriculum-paola-sorrento.pdf" download class="btn-primary" style="background:var(--navy); border-color:var(--navy);">
+            Scarica il Curriculum
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ESPERIENZE ══ -->
+<section id="esperienze" class="section">
+  <div class="section-inner">
+    <p class="section-tag">Esperienze</p>
+    <h2 class="section-title">Collaborazioni e progetti</h2>
+    <div class="divider"></div>
+    <p class="section-lead">Una rete di collaborazioni consolidate con realtà del territorio pugliese e nazionale, con particolare expertise nella gestione di progetti finanziati.</p>
+
+    <div class="exp-grid">
+      <div class="exp-card">
+        <span class="exp-tag">Terzo Settore</span>
+        <h3>Associazioni e Cooperative Sociali</h3>
+        <p>Collaborazione continuativa con enti del terzo settore in Puglia per la fornitura di servizi di interpretariato nell'ambito di progetti sociali, eventi e attività formative rivolte alle persone sorde.</p>
+      </div>
+      <div class="exp-card">
+        <span class="exp-tag">Bandi Regionali</span>
+        <h3>Progetti Finanziati Regione Puglia</h3>
+        <p>Figura professionale di riferimento per associazioni vincitrice di bandi regionali che prevedono l'inclusione delle persone sorde. Esperienza nella gestione della documentazione richiesta dai bandi.</p>
+      </div>
+      <div class="exp-card">
+        <span class="exp-tag">Formazione</span>
+        <h3>Enti di Formazione e Scuole</h3>
+        <p>Attività di interpretariato in contesti educativi e formativi, affiancando studenti sordi e garantendo pari opportunità di accesso all'istruzione e alla formazione professionale.</p>
+      </div>
+      <div class="exp-card">
+        <span class="exp-tag">Cultura & Spettacolo</span>
+        <h3>Festival, Mostre e Spettacoli</h3>
+        <p>Interpretariato per eventi culturali, rassegne teatrali, festival e manifestazioni pubbliche nel Salento. Rendere la cultura accessibile è una priorità e una passione personale.</p>
+      </div>
+      <div class="exp-card">
+        <span class="exp-tag">Sanità</span>
+        <h3>Strutture Sanitarie e Mediche</h3>
+        <p>Supporto in ambito medico-sanitario per garantire una comunicazione accurata e priva di ambiguità tra operatori sanitari e pazienti sordi o ipoudenti.</p>
+      </div>
+      <div class="exp-card">
+        <span class="exp-tag">Aziendale</span>
+        <h3>Aziende Private e PA</h3>
+        <p>Collaborazioni con aziende private ed enti pubblici per l'interpretariato in convegni, assemblee dei lavoratori, colloqui e processi di selezione del personale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CORSI ══ -->
+<section id="corsi" class="section">
+  <div class="section-inner">
+    <p class="section-tag">Formazione</p>
+    <h2 class="section-title">Corsi di avvicinamento alla LIS e consulenza</h2>
+    <div class="divider"></div>
+    <p class="section-lead">Non solo interpretariato: mi propongo come punto di riferimento per la formazione sulla comunicazione accessibile nel Salento.</p>
+
+    <div class="courses-layout">
+      <div class="course-block">
+        <h3>Corsi di Lingua dei Segni Italiana</h3>
+        <p class="course-desc">Percorsi di avvicinamento alla LIS per individui, team aziendali e operatori del sociale. Impara le basi per comunicare con le persone sorde nel tuo lavoro quotidiano.</p>
+        <ul class="course-list">
+          <li>Corsi base per principianti (gruppi e individuali)</li>
+          <li>LIS applicata al contesto professionale (sanità, scuola, customer service)</li>
+          <li>Moduli personalizzati per team e uffici HR</li>
+          <li>Corsi intensivi per operatori del terzo settore</li>
+        </ul>
+      </div>
+
+      <div class="course-block">
+        <h3>Formazione sulla Comunicazione con Persone Sorde</h3>
+        <p class="course-desc">Non serve diventare interpreti: esistono strategie comunicative efficaci che chiunque può imparare per relazionarsi meglio con persone sorde o ipoudenti.</p>
+        <ul class="course-list">
+          <li>Strategie di comunicazione visiva e tattile</li>
+          <li>Uso di supporti visivi e tecnologie assistive</li>
+          <li>Sensibilizzazione sulla cultura Sorda</li>
+          <li>Workshop aziendali su diversità e inclusione</li>
+        </ul>
+      </div>
+
+      <div class="course-block">
+        <h3>Consulenza sull'Accessibilità Digitale</h3>
+        <p class="course-desc">Analisi e miglioramento dei contenuti digitali, dei siti web e dei servizi aziendali per renderli conformi alle normative sull'accessibilità (WCAG, Legge Stanca).</p>
+        <ul class="course-list">
+          <li>Audit accessibilità del sito web e app</li>
+          <li>Linee guida per la produzione di video accessibili</li>
+          <li>Strumenti e tecnologie per la comunicazione inclusiva</li>
+          <li>Supporto nella stesura di progetti per bandi sull'inclusione</li>
+        </ul>
+      </div>
+
+      <div class="course-block">
+        <h3>Consulenza per Bandi e Progetti</h3>
+        <p class="course-desc">Supporto specialistico per associazioni e cooperative che partecipano a bandi regionali o nazionali che prevedono servizi per le persone sorde.</p>
+        <ul class="course-list">
+          <li>Definizione del fabbisogno di interpretariato nel progetto</li>
+          <li>Stima dei costi e pianificazione delle attività</li>
+          <li>Documentazione professionale per i bandi</li>
+          <li>Monitoraggio e rendicontazione delle attività</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTATTI ══ -->
+<section id="contatti" class="section">
+  <div class="section-inner">
+    <p class="section-tag" style="color:var(--teal);">Contatti</p>
+    <h2 class="section-title">Scriviami per un preventivo</h2>
+    <div class="divider"></div>
+    <p class="section-lead" style="color:rgba(255,255,255,0.6);">Che si tratti di un singolo evento o di un progetto continuativo, sono a disposizione per un confronto senza impegno.</p>
+
+    <div class="contact-grid">
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="nome@azienda.it" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="organizzazione">Organizzazione</label>
+          <input type="text" id="organizzazione" name="organizzazione" placeholder="Azienda, associazione o ente">
+        </div>
+        <div class="form-group">
+          <label for="servizio">Tipo di servizio</label>
+          <select id="servizio" name="servizio">
+            <option value="">Seleziona un servizio...</option>
+            <option>Interpretariato per evento</option>
+            <option>Formazione aziendale</option>
+            <option>Contenuti digitali / video</option>
+            <option>Corso di LIS</option>
+            <option>Consulenza accessibilità</option>
+            <option>Supporto bandi regionali</option>
+            <option>Altro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="messaggio">Messaggio</label>
+          <textarea id="messaggio" name="messaggio" placeholder="Descrivimi brevemente il tuo progetto o evento..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Invia la richiesta →</button>
+      </form>
+
+      <div class="contact-info">
+        <div>
+          <h3>Paola Sorrento</h3>
+          <p class="contact-tagline">Interprete LIS professionista nel Salento e in tutta la Puglia. Disponibile anche per eventi in tutta Italia e in remoto.</p>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <a href="mailto:interpretelissalento@gmail.com">interpretelissalento@gmail.com</a>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+          </div>
+          <a href="tel:+393208187133">320 818 7133</a>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <span>Salento, Puglia — Italia</span>
+        </div>
+
+        <div>
+          <p style="font-size:0.8rem;color:rgba(255,255,255,0.4);margin-bottom:0.75rem;text-transform:uppercase;letter-spacing:0.08em;font-weight:500;">Seguimi sui social</p>
+          <div class="social-links">
+            <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <p>© 2025 Paola Sorrento — Interprete LIS · P.IVA [inserisci] · <a href="mailto:interpretelissalento@gmail.com">interpretelissalento@gmail.com</a> · Tutti i diritti riservati</p>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = 'Messaggio inviato ✓';
+    btn.style.background = '#1d6b63';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.textContent = 'Invia la richiesta →';
+      btn.style.background = '';
+      btn.disabled = false;
+      e.target.reset();
+    }, 4000);
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
