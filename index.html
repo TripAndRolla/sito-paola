@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Paola Sorrento - Interprete LIS professionista nel Salento. Interpretariato Lingua dei Segni Italiana per aziende, associazioni ed enti. Corsi LIS e consulenza accessibilità in Puglia.">
-<meta name="keywords" content="interprete LIS Salento, interprete lingua dei segni Puglia, accessibilità sordi Salento, corsi LIS Salento, interprete LIS bandi regionali, accessibilità aziendale sordi">
+<meta name="description" content="Paola Sorrento Interprete LIS e Consulente Accessibilità Puglia. Interprete professionista di Lingua dei Segni Italiana (LIS) nel Salento e in tutta la Puglia. Servizi per eventi, aziende, bandi regionali e terzo settore.">
+<meta name="keywords" content="interprete LIS Salento, interprete lingua dei segni Puglia, consulente accessibilità Puglia, accessibilità sordi Salento, corsi LIS Salento, interprete LIS bandi regionali, accessibilità aziendale sordi, terzo settore accessibilità Puglia">
 <meta name="author" content="Paola Sorrento">
-<meta property="og:title" content="Paola Sorrento – Interprete LIS | Salento">
-<meta property="og:description" content="Servizi professionali di interpretariato LIS per aziende e associazioni nel Salento e in Puglia.">
+<meta property="og:title" content="Paola Sorrento – Interprete LIS e Consulente Accessibilità | Puglia">
+<meta property="og:description" content="Interprete professionista di Lingua dei Segni Italiana nel Salento e in tutta la Puglia. Servizi per eventi, aziende, bandi regionali e terzo settore.">
 <meta property="og:type" content="website">
-<title>Paola Sorrento – Interprete LIS | Salento, Puglia</title>
+<title>Paola Sorrento – Interprete LIS e Consulente Accessibilità | Salento, Puglia</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -143,7 +143,7 @@
     height: 100%;
     background: var(--navy-mid);
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-    opacity: 0.5;
+    opacity: 0.3;
   }
 
   .hero-accent {
@@ -167,13 +167,13 @@
   }
 
   .hero-inner {
-    max-width: 1100px;
+    max-width: 860px;
     margin: 0 auto;
-    padding: 5rem 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     position: relative;
     z-index: 1;
     width: 100%;
@@ -188,6 +188,7 @@
     margin-bottom: 1.25rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.6rem;
   }
 
@@ -200,12 +201,21 @@
     flex-shrink: 0;
   }
 
+  .hero-eyebrow::after {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--teal);
+    flex-shrink: 0;
+  }
+
   .hero-title {
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-size: clamp(2.6rem, 5vw, 4.2rem);
     color: var(--white);
     font-weight: 700;
     margin-bottom: 1.25rem;
-    line-height: 1.15;
+    line-height: 1.1;
   }
 
   .hero-title em {
@@ -214,17 +224,19 @@
   }
 
   .hero-subtitle {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: rgba(255,255,255,0.72);
     margin-bottom: 2.5rem;
-    line-height: 1.75;
+    line-height: 1.8;
     font-weight: 300;
+    max-width: 680px;
   }
 
   .hero-ctas {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .btn-primary {
@@ -328,6 +340,7 @@
     gap: 0.75rem;
     margin-top: 2rem;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .badge {
@@ -1088,12 +1101,8 @@
   /* ─── RESPONSIVE ─── */
   @media (max-width: 900px) {
     .hero-inner {
-      grid-template-columns: 1fr;
-      gap: 2.5rem;
       padding: 4rem 1.5rem;
     }
-
-    .hero-video-wrapper { order: -1; }
 
     .value-grid,
     .about-grid,
@@ -1168,12 +1177,12 @@
   <div class="hero-accent-2"></div>
   <div class="hero-inner">
     <div class="hero-text">
-      <p class="hero-eyebrow">Interprete LIS · Salento, Puglia</p>
+      <p class="hero-eyebrow">Interprete LIS · Consulente Accessibilità · Salento, Puglia</p>
       <h1 class="hero-title">
-        Rendi i tuoi eventi e servizi <em>accessibili a tutti</em>
+        Paola Sorrento — Interprete LIS e <em>Consulente Accessibilità</em> in Puglia
       </h1>
       <p class="hero-subtitle">
-        Paola Sorrento — interprete professionista di Lingua dei Segni Italiana. Affianco aziende, associazioni ed enti pubblici per abbattere le barriere comunicative e rendere ogni spazio davvero inclusivo.
+        Interprete professionista di Lingua dei Segni Italiana (LIS) nel Salento e in tutta la Puglia. Affianco aziende, associazioni, enti pubblici e terzo settore per abbattere le barriere comunicative e rendere ogni servizio davvero inclusivo. Esperienza diretta con bandi regionali e progetti finanziati.
       </p>
       <div class="hero-ctas">
         <a href="#contatti" class="btn-primary">
@@ -1183,19 +1192,13 @@
         <a href="#servizi" class="btn-secondary">Scopri i servizi</a>
       </div>
       <div class="hero-badges">
-        <span class="badge">Partita IVA</span>
         <span class="badge">Iscritta ANILIS</span>
         <span class="badge">Qualifica ENS 2017</span>
         <span class="badge">Bandi Regionali</span>
+        <span class="badge">Terzo Settore</span>
+        <span class="badge">Libera Professionista</span>
       </div>
     </div>
-  <div class="hero-video-wrapper">
-    <div class="video-placeholder" style="background:var(--navy-mid); border-radius:12px; overflow:hidden; aspect-ratio:16/10; width:100%;">
-      <video controls style="width:100%; height:100%; object-fit:cover; display:block;" poster="foto-paola.jpeg">
-        <source src="video.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
   </div>
 </section>
 
@@ -1565,7 +1568,7 @@
 
 <!-- ══ FOOTER ══ -->
 <footer>
-  <p>© 2025 Paola Sorrento — Interprete LIS · P.IVA [inserisci] · <a href="mailto:interpretelissalento@gmail.com">interpretelissalento@gmail.com</a> · Tutti i diritti riservati</p>
+  <p>© 2026 Paola Sorrento — Interprete LIS e Consulente Accessibilità · Salento, Puglia · <a href="mailto:interpretelissalento@gmail.com">interpretelissalento@gmail.com</a> · Tutti i diritti riservati</p>
 </footer>
 
 <script>
